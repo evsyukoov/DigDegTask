@@ -66,7 +66,7 @@ public class Parser{
     }
 
     public static void main(String[] args) {
-        if (args[0] == null)
+        if (args.length != 1)
             System.out.println("Wrong numbers of arguments");
         else
             System.out.println(new Parser().parse(args[0]));
